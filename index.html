@@ -25,12 +25,13 @@
           <span class="sr-only" data-zh="打开导航" data-en="Open navigation">打开导航</span>
         </button>
         <div class="nav-links" id="nav-links">
-          <a href="#interests" data-zh="关于我" data-en="About">关于我</a>
+          <a href="#about" data-zh="关于" data-en="About">关于</a>
           <a href="#news" data-zh="动态" data-en="News">动态</a>
           <a href="#research" data-zh="研究" data-en="Research">研究</a>
           <a href="#experience" data-zh="经历" data-en="Experience">经历</a>
           <a href="#honors" data-zh="荣誉" data-en="Honors">荣誉</a>
           <a href="#skills" data-zh="技能" data-en="Skills">技能</a>
+          <a href="#interests" data-zh="兴趣" data-en="Interests">兴趣</a>
         </div>
         <button class="language-button" type="button" aria-label="Switch to English">
           <span class="language-current">中文</span><span>/</span><span class="language-other">EN</span>
@@ -39,11 +40,12 @@
     </header>
 
     <main id="main" class="shell">
-      <section class="profile" aria-labelledby="profile-name">
+      <section class="profile" id="about" aria-labelledby="profile-name">
         <div class="profile-photo">
           <img src="assets/avatar.jpg" width="975" height="1280" alt="张艺耀 / Yiyao Zhang" fetchpriority="high">
         </div>
         <div class="profile-main">
+          <span class="profile-kicker" data-zh="你好，我是" data-en="Hi, I am">你好，我是</span>
           <div class="profile-heading">
             <div>
               <h1 id="profile-name" data-zh="张艺耀" data-en="Yiyao Zhang">张艺耀</h1>
@@ -54,7 +56,12 @@
 
           <p class="profile-title" data-zh="电气自动化专科生 · 计算机视觉 · 可靠机器学习 · 边缘智能" data-en="Electrical Automation Student · Computer Vision · Reliable ML · Edge Intelligence">电气自动化专科生 · 计算机视觉 · 可靠机器学习 · 边缘智能</p>
 
-          <p class="profile-bio" data-zh="就读于江西电力职业技术学院，专业前 10%。研究围绕低标注与拥挤场景下的视觉感知展开，关注实例/语义分割、伪标签学习、目标与置信度校准、选择性预测，以及轻量模型在低功耗设备上的可靠部署。" data-en="I am an Electrical Automation student at Jiangxi Electric Vocational & Technical College, ranked in the top 10% of my program. My research studies visual perception under limited annotation and crowded scenes, spanning instance/semantic segmentation, pseudo-label learning, target and confidence calibration, selective prediction, and reliable edge deployment.">就读于江西电力职业技术学院，专业前 10%。研究围绕低标注与拥挤场景下的视觉感知展开，关注实例/语义分割、伪标签学习、目标与置信度校准、选择性预测，以及轻量模型在低功耗设备上的可靠部署。</p>
+          <div class="profile-bio">
+            <p data-zh="我叫张艺耀，目前就读于江西电力职业技术学院电气自动化专业，预计于 2027 年毕业，专业排名前 10%。在康敏辉老师指导下，我从自动化控制与嵌入式系统出发开展计算机视觉研究，也因此格外关注算法能否从实验走向真实设备。" data-en="I am Yiyao Zhang, an Electrical Automation student at Jiangxi Electric Vocational & Technical College, expected to graduate in 2027 and currently ranked in the top 10% of my program. Advised by Minhui Kang, I approach computer vision from a background in automation control and embedded systems, which makes me especially interested in taking algorithms beyond experiments and onto real devices.">我叫张艺耀，目前就读于江西电力职业技术学院电气自动化专业，预计于 2027 年毕业，专业排名前 10%。在康敏辉老师指导下，我从自动化控制与嵌入式系统出发开展计算机视觉研究，也因此格外关注算法能否从实验走向真实设备。</p>
+            <p data-zh="目前，我主要探索标注稀缺或目标拥挤时，如何让视觉模型学得更稳、输出更可信、部署更高效。研究覆盖实例与语义分割、教师—学生自训练、伪标签过滤、目标与置信度校准、选择性预测、统计验证，以及轻量模型的 INT8 边缘推理。" data-en="My current work asks how visual models can learn more steadily, produce more trustworthy outputs, and deploy more efficiently when annotations are scarce or scenes are crowded. It spans instance and semantic segmentation, teacher–student self-training, pseudo-label filtering, target and confidence calibration, selective prediction, statistical validation, and INT8 edge inference for lightweight models.">目前，我主要探索标注稀缺或目标拥挤时，如何让视觉模型学得更稳、输出更可信、部署更高效。研究覆盖实例与语义分割、教师—学生自训练、伪标签过滤、目标与置信度校准、选择性预测、统计验证，以及轻量模型的 INT8 边缘推理。</p>
+          </div>
+
+          <p class="profile-note" data-zh="我喜欢把问题拆成可复现的小实验：先建立可靠基线，再通过对照、消融与部署验证逐步回答问题。研究之外，我也长期投入竞技游戏，享受局势判断、团队协作和持续复盘。" data-en="I like to turn questions into reproducible experiments: establish a reliable baseline first, then answer each question through controls, ablations, and deployment checks. Outside research, I also enjoy competitive games for their fast decisions, teamwork, and constant review.">我喜欢把问题拆成可复现的小实验：先建立可靠基线，再通过对照、消融与部署验证逐步回答问题。研究之外，我也长期投入竞技游戏，享受局势判断、团队协作和持续复盘。</p>
 
           <div class="profile-links">
             <a href="mailto:13650921446@163.com">Email</a>
@@ -77,42 +84,6 @@
         <div><strong>3</strong><span data-zh="在研工作" data-en="Active research works">在研工作</span></div>
         <div><strong>7</strong><span data-zh="省级以上奖项" data-en="Provincial+ awards">省级以上奖项</span></div>
       </div>
-
-      <section class="compact-section interests-section" id="interests">
-        <div class="section-title">
-          <h2 data-zh="研究之外" data-en="Beyond Research">研究之外</h2>
-          <span>Interests & Gaming</span>
-        </div>
-        <div class="interest-layout">
-          <div class="interest-copy">
-            <span class="eyebrow" data-zh="个人兴趣" data-en="Personal Interests">个人兴趣</span>
-            <h3 data-zh="我也享受竞技、策略与持续复盘。" data-en="I also enjoy competition, strategy, and constant review.">我也享受竞技、策略与持续复盘。</h3>
-            <p data-zh="研究和工程之外，我长期体验不同类型的竞技游戏。无论是射击游戏中的即时判断、MOBA 的资源与团队协作，还是自走棋的阵容运营，我都喜欢观察局势、拆解决策并在复盘中优化细节。对我而言，游戏既是放松方式，也是保持专注、反应与策略思维的一种训练。" data-en="Outside research and engineering, I have spent years exploring different competitive games. I enjoy reading fast-changing situations, breaking decisions into smaller choices, coordinating with teammates, and improving through review—whether in tactical shooters, MOBAs, or auto battlers. Gaming is both how I unwind and how I keep my focus, reactions, and strategic thinking sharp.">研究和工程之外，我长期体验不同类型的竞技游戏。无论是射击游戏中的即时判断、MOBA 的资源与团队协作，还是自走棋的阵容运营，我都喜欢观察局势、拆解决策并在复盘中优化细节。对我而言，游戏既是放松方式，也是保持专注、反应与策略思维的一种训练。</p>
-          </div>
-          <div class="game-list" aria-label="Competitive gaming experience">
-            <article>
-              <div><span class="game-index">01</span><h3>VALORANT</h3></div>
-              <p><strong data-zh="神话 I" data-en="Immortal I">神话 I</strong><span data-zh="Rating 1.4" data-en="1.4 rating">Rating 1.4</span></p>
-            </article>
-            <article>
-              <div><span class="game-index">02</span><h3 data-zh="王者荣耀" data-en="Honor of Kings">王者荣耀</h3></div>
-              <p><strong data-zh="司马懿 · 国服榜" data-en="Sima Yi · National leaderboard">司马懿 · 国服榜</strong><span data-zh="最高战力 16,000+" data-en="Peak power 16,000+">最高战力 16,000+</span></p>
-            </article>
-            <article class="game-featured">
-              <div><span class="game-index">03</span><h3 data-zh="英雄联盟手游" data-en="League of Legends: Wild Rift">英雄联盟手游</h3></div>
-              <p><strong data-zh="艾瑞莉娅 · 最高战力 23,144" data-en="Irelia · Peak champion score 23,144">艾瑞莉娅 · 最高战力 23,144</strong><span data-zh="Android QQ / 微信区 · 国一上榜 10+ 次" data-en="Android QQ / WeChat · National No. 1 leaderboard 10+ times">Android QQ / 微信区 · 国一上榜 10+ 次</span></p>
-            </article>
-            <article>
-              <div><span class="game-index">04</span><h3 data-zh="金铲铲之战" data-en="Battle of Golden Spatula">金铲铲之战</h3></div>
-              <p><strong data-zh="王者段位" data-en="King tier">王者段位</strong><span data-zh="全国最高排名 21" data-en="Peak national rank: 21">全国最高排名 21</span></p>
-            </article>
-            <article>
-              <div><span class="game-index">05</span><h3>CS:GO · 5E</h3></div>
-              <p><strong>A++</strong><span data-zh="平台段位" data-en="Platform rating">平台段位</span></p>
-            </article>
-          </div>
-        </div>
-      </section>
 
       <section class="compact-section" id="news">
         <div class="section-title">
@@ -224,6 +195,42 @@
           <div><h3 data-zh="可靠性与评估" data-en="Reliability & Evaluation">可靠性与评估</h3><p data-zh="选择性预测 · 不确定性与校准 · OOF / 交叉拟合 · 成对与聚类 Bootstrap · 消融实验 · 打乱对照 · 难度切片 · AP / mAP / MACD" data-en="Selective prediction · Uncertainty & calibration · OOF / cross-fitting · Paired & cluster bootstrap · Ablations · Shuffled controls · Difficulty slices · AP / mAP / MACD">选择性预测 · 不确定性与校准 · OOF / 交叉拟合 · 成对与聚类 Bootstrap · 消融实验 · 打乱对照 · 难度切片 · AP / mAP / MACD</p></div>
           <div><h3 data-zh="边缘与嵌入式" data-en="Edge & Embedded">边缘与嵌入式</h3><p>PTQ · INT8 · CANMV-K230 / KPU · STM32CubeIDE / HAL · C51 · PID · RS485 · PLC · TIA Portal · Proteus · Multisim · JLCEDA</p></div>
           <div><h3 data-zh="编程与科研开发" data-en="Programming & Research">编程与科研开发</h3><p>Python · C / C++ · MATLAB · LaTeX · Linux / WSL · Git · NumPy / Pandas · Office / WPS · Data Processing & Visualization</p></div>
+        </div>
+      </section>
+
+      <section class="compact-section interests-section" id="interests">
+        <div class="section-title">
+          <h2 data-zh="研究之外" data-en="Beyond Research">研究之外</h2>
+          <span>Interests & Gaming</span>
+        </div>
+        <div class="interest-layout">
+          <div class="interest-copy">
+            <span class="eyebrow" data-zh="个人兴趣" data-en="Personal Interests">个人兴趣</span>
+            <h3 data-zh="我也享受竞技、策略与持续复盘。" data-en="I also enjoy competition, strategy, and constant review.">我也享受竞技、策略与持续复盘。</h3>
+            <p data-zh="研究和工程之外，我长期体验不同类型的竞技游戏。无论是射击游戏中的即时判断、MOBA 的资源与团队协作，还是自走棋的阵容运营，我都喜欢观察局势、拆解决策并在复盘中优化细节。对我而言，游戏既是放松方式，也是保持专注、反应与策略思维的一种训练。" data-en="Outside research and engineering, I have spent years exploring different competitive games. I enjoy reading fast-changing situations, breaking decisions into smaller choices, coordinating with teammates, and improving through review—whether in tactical shooters, MOBAs, or auto battlers. Gaming is both how I unwind and how I keep my focus, reactions, and strategic thinking sharp.">研究和工程之外，我长期体验不同类型的竞技游戏。无论是射击游戏中的即时判断、MOBA 的资源与团队协作，还是自走棋的阵容运营，我都喜欢观察局势、拆解决策并在复盘中优化细节。对我而言，游戏既是放松方式，也是保持专注、反应与策略思维的一种训练。</p>
+          </div>
+          <div class="game-list" aria-label="Competitive gaming experience">
+            <article>
+              <div><span class="game-index">01</span><h3>VALORANT</h3></div>
+              <p><strong data-zh="神话 I" data-en="Immortal I">神话 I</strong><span data-zh="Rating 1.4" data-en="1.4 rating">Rating 1.4</span></p>
+            </article>
+            <article>
+              <div><span class="game-index">02</span><h3 data-zh="王者荣耀" data-en="Honor of Kings">王者荣耀</h3></div>
+              <p><strong data-zh="司马懿 · 国服榜" data-en="Sima Yi · National leaderboard">司马懿 · 国服榜</strong><span data-zh="最高战力 16,000+" data-en="Peak power 16,000+">最高战力 16,000+</span></p>
+            </article>
+            <article class="game-featured">
+              <div><span class="game-index">03</span><h3 data-zh="英雄联盟手游" data-en="League of Legends: Wild Rift">英雄联盟手游</h3></div>
+              <p><strong data-zh="艾瑞莉娅 · 最高战力 23,144" data-en="Irelia · Peak champion score 23,144">艾瑞莉娅 · 最高战力 23,144</strong><span data-zh="Android QQ / 微信区 · 国一上榜 10+ 次" data-en="Android QQ / WeChat · National No. 1 leaderboard 10+ times">Android QQ / 微信区 · 国一上榜 10+ 次</span></p>
+            </article>
+            <article>
+              <div><span class="game-index">04</span><h3 data-zh="金铲铲之战" data-en="Battle of Golden Spatula">金铲铲之战</h3></div>
+              <p><strong data-zh="王者段位" data-en="King tier">王者段位</strong><span data-zh="全国最高排名 21" data-en="Peak national rank: 21">全国最高排名 21</span></p>
+            </article>
+            <article>
+              <div><span class="game-index">05</span><h3>CS:GO · 5E</h3></div>
+              <p><strong>A++</strong><span data-zh="平台段位" data-en="Platform rating">平台段位</span></p>
+            </article>
+          </div>
         </div>
       </section>
 
