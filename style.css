@@ -47,7 +47,6 @@ button { font: inherit; }
 .profile-title { margin: 15px 0 8px; color: #334958; font-weight: 700; }
 .profile-bio { max-width: 770px; color: var(--muted); }
 .profile-bio p { margin: 0 0 7px; }
-.profile-note { max-width: 770px; margin: 10px 0 0; padding: 7px 11px; color: #486071; background: #f7fafc; border-left: 2px solid var(--blue); font-size: 11px; }
 .profile-stats { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
 .profile-stat { display: inline-flex; height: 22px; overflow: hidden; border: 1px solid #d5dde3; border-radius: 3px; font-size: 9px; line-height: 20px; }
 .profile-stat span { padding: 0 7px; color: #566773; background: #f2f5f7; }
@@ -58,8 +57,6 @@ button { font: inherit; }
 .profile-links a, .profile-links > span { display: inline-flex; align-items: center; min-height: 27px; padding: 4px 10px; background: white; border: 1px solid var(--line); border-radius: 4px; }
 .profile-links a { color: var(--blue); font-weight: 700; }
 .profile-links a:hover { border-color: #9ac2de; background: #f8fbfd; }
-.research-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-.research-tags span { padding: 4px 8px; color: #365267; background: var(--blue-soft); border: 1px solid #d7e7f3; border-radius: 3px; font-size: 10px; font-weight: 650; }
 
 .interest-layout { display: grid; grid-template-columns: minmax(260px, .78fr) minmax(0, 1.22fr); border: 1px solid var(--line); border-top: 0; }
 .interest-copy { padding: 24px 26px; background: var(--blue-soft); border-right: 1px solid var(--line); }
@@ -162,10 +159,8 @@ button { font: inherit; }
   .name-en { font-size: 13px; }
   .profile-title { margin-top: 9px; font-size: 11px; line-height: 1.5; }
   .profile-bio { margin-top: 12px; font-size: 11px; text-align: left; }
-  .profile-note { margin-top: 8px; text-align: left; }
-  .profile-stats, .profile-links, .research-tags { justify-content: center; }
+  .profile-stats, .profile-links { justify-content: center; }
   .profile-links { margin-top: 5px; }
-  .research-tags { margin-top: 9px; }
   .interest-copy { padding: 20px; }
   .interest-copy h3 { font-size: 17px; }
   .game-list article { grid-template-columns: 1fr; gap: 3px; padding: 11px 14px; }
