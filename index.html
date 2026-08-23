@@ -3,16 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="张艺耀（Yiyao Zhang）的个人主页：计算机视觉、可靠机器学习、边缘智能，以及研究之外的兴趣与经历。">
+    <meta name="description" content="张艺耀（Yiyao Zhang）的个人学术主页：可靠且标签高效的视觉学习、证据感知评估与边缘视觉系统。">
     <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://legendzyy.github.io/">
     <meta property="og:title" content="Yiyao Zhang | Computer Vision & Reliable AI">
     <meta property="og:description" content="Research profile of Yiyao Zhang — Computer Vision, Reliable AI, Label-efficient Learning and Edge Intelligence.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/avatar.jpg">
+    <meta property="og:url" content="https://legendzyy.github.io/">
+    <meta property="og:image" content="https://legendzyy.github.io/assets/avatar.jpg">
     <title>张艺耀 | 计算机视觉与可靠 AI</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yiyao Zhang",
+        "alternateName": "张艺耀",
+        "url": "https://legendzyy.github.io/",
+        "image": "https://legendzyy.github.io/assets/avatar.jpg",
+        "jobTitle": "Student Researcher",
+        "sameAs": [
+          "https://github.com/Legendzyy",
+          "https://zenodo.org/records/22026942"
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main" data-zh="跳到正文" data-en="Skip to content">跳到正文</a>
@@ -26,12 +43,11 @@
         </button>
         <div class="nav-links" id="nav-links">
           <a href="#about" data-zh="关于" data-en="About">关于</a>
-          <a href="#news" data-zh="动态" data-en="News">动态</a>
           <a href="#research" data-zh="研究" data-en="Research">研究</a>
+          <a href="#news" data-zh="动态" data-en="News">动态</a>
           <a href="#experience" data-zh="经历" data-en="Experience">经历</a>
           <a href="#honors" data-zh="荣誉" data-en="Honors">荣誉</a>
-          <a href="#skills" data-zh="技能" data-en="Skills">技能</a>
-          <a href="#interests" data-zh="兴趣" data-en="Interests">兴趣</a>
+          <a href="#interests" data-zh="研究之外" data-en="Beyond">研究之外</a>
         </div>
         <button class="language-button" type="button" aria-label="Switch to English">
           <span class="language-current">中文</span><span>/</span><span class="language-other">EN</span>
@@ -54,11 +70,11 @@
             <span class="availability"><i></i><span data-zh="开放科研合作与实习" data-en="Open to research & internships">开放科研合作与实习</span></span>
           </div>
 
-          <p class="profile-title" data-zh="电气自动化专科生 · 计算机视觉 · 可靠机器学习 · 边缘智能" data-en="Electrical Automation Student · Computer Vision · Reliable ML · Edge Intelligence">电气自动化专科生 · 计算机视觉 · 可靠机器学习 · 边缘智能</p>
+          <p class="profile-title" data-zh="学生研究者 · 计算机视觉 · 可靠人工智能 · 边缘智能" data-en="Student Researcher · Computer Vision · Reliable AI · Edge Intelligence">学生研究者 · 计算机视觉 · 可靠人工智能 · 边缘智能</p>
 
           <div class="profile-bio">
             <p data-zh="我叫张艺耀，目前就读于江西电力职业技术学院电气自动化专业，预计于 2027 年毕业，专业排名前 10%。在康敏辉老师指导下，我从自动化控制与嵌入式系统出发开展计算机视觉研究，也因此格外关注算法能否从实验走向真实设备。" data-en="I am Yiyao Zhang, an Electrical Automation student at Jiangxi Electric Vocational & Technical College, expected to graduate in 2027 and currently ranked in the top 10% of my program. Advised by Minhui Kang, I approach computer vision from a background in automation control and embedded systems, which makes me especially interested in taking algorithms beyond experiments and onto real devices.">我叫张艺耀，目前就读于江西电力职业技术学院电气自动化专业，预计于 2027 年毕业，专业排名前 10%。在康敏辉老师指导下，我从自动化控制与嵌入式系统出发开展计算机视觉研究，也因此格外关注算法能否从实验走向真实设备。</p>
-            <p data-zh="目前，我主要探索标注稀缺或目标拥挤时，如何让视觉模型学得更稳、输出更可信、部署更高效。研究覆盖实例与语义分割、教师—学生自训练、伪标签过滤、目标与置信度校准、选择性预测、统计验证，以及轻量模型的 INT8 边缘推理。" data-en="My current work asks how visual models can learn more steadily, produce more trustworthy outputs, and deploy more efficiently when annotations are scarce or scenes are crowded. It spans instance and semantic segmentation, teacher–student self-training, pseudo-label filtering, target and confidence calibration, selective prediction, statistical validation, and INT8 edge inference for lightweight models.">目前，我主要探索标注稀缺或目标拥挤时，如何让视觉模型学得更稳、输出更可信、部署更高效。研究覆盖实例与语义分割、教师—学生自训练、伪标签过滤、目标与置信度校准、选择性预测、统计验证，以及轻量模型的 INT8 边缘推理。</p>
+            <p data-zh="我的研究关注在监督稀缺、视觉证据不完整或部署受限的条件下，如何让视觉模型保持可靠、可验证并可部署。当前工作覆盖标签高效分割、拥挤实例可靠性、证据感知评估与边缘部署。" data-en="My research studies how visual models can remain reliable, verifiable, and deployable under scarce supervision, incomplete visual evidence, and constrained deployment. My current work spans label-efficient segmentation, crowded-instance reliability, evidence-aware evaluation, and edge deployment.">我的研究关注在监督稀缺、视觉证据不完整或部署受限的条件下，如何让视觉模型保持可靠、可验证并可部署。当前工作覆盖标签高效分割、拥挤实例可靠性、证据感知评估与边缘部署。</p>
           </div>
 
           <div class="profile-stats" aria-label="Profile highlights">
@@ -77,6 +93,54 @@
         </div>
       </section>
 
+      <section class="compact-section" id="research">
+        <div class="section-title">
+          <h2 data-zh="研究议题与代表工作" data-en="Research Agenda & Selected Work">研究议题与代表工作</h2>
+          <span>Research Agenda</span>
+        </div>
+
+        <p class="research-agenda" data-zh="我的研究关注在监督稀缺、视觉证据不完整或部署受限的条件下，如何让视觉模型保持可靠、可验证并可部署。" data-en="My research studies how visual models can remain reliable, verifiable, and deployable under scarce supervision, incomplete visual evidence, and constrained deployment.">我的研究关注在监督稀缺、视觉证据不完整或部署受限的条件下，如何让视觉模型保持可靠、可验证并可部署。</p>
+
+        <div class="direction-grid">
+          <article><b>01</b><h3 data-zh="可靠且标签高效的视觉学习" data-en="Reliable & Label-efficient Visual Learning">可靠且标签高效的视觉学习</h3><p data-zh="研究稀缺标注、拥挤实例与噪声伪标签下的教师—学生自训练、局部冲突建模、目标调制和结构先验。" data-en="Scarce labels, crowded instances, noisy pseudo-labels, teacher–student self-training, local-conflict modeling, target modulation, and structural priors.">研究稀缺标注、拥挤实例与噪声伪标签下的教师—学生自训练、局部冲突建模、目标调制和结构先验。</p></article>
+          <article><b>02</b><h3 data-zh="可靠性与证据感知评估" data-en="Reliability & Evidence-aware Evaluation">可靠性与证据感知评估</h3><p data-zh="关注不确定性、选择性预测、交叉拟合、冻结评分、Bootstrap 统计验证，以及可审计的证据边界。" data-en="Uncertainty, selective prediction, cross-fitting, frozen scoring, bootstrap validation, and auditable evidence boundaries.">关注不确定性、选择性预测、交叉拟合、冻结评分、Bootstrap 统计验证，以及可审计的证据边界。</p></article>
+          <article><b>03</b><h3 data-zh="边缘视觉系统" data-en="Edge Vision Systems">边缘视觉系统</h3><p data-zh="研究 INT8/PTQ、K230 与嵌入式视觉，在受限算力下进行端到端部署验证。" data-en="INT8/PTQ, K230, embedded vision, and end-to-end deployment validation under constrained compute.">研究 INT8/PTQ、K230 与嵌入式视觉，在受限算力下进行端到端部署验证。</p></article>
+        </div>
+
+        <div class="paper-list">
+          <!-- To add a real teaser later: add class="has-teaser" to the article and insert
+               <figure class="paper-teaser"><img src="assets/research/project-name.webp" alt="..."></figure>. -->
+          <article class="paper-item">
+            <div class="paper-body">
+              <div class="paper-title-row"><span class="paper-index">01</span><h3>Technical Validation of Label-Efficient Blueberry Instance Segmentation under Extreme Annotation Scarcity</h3></div>
+              <div class="paper-status-row"><span class="status accent">Scientific Reports · Revised Manuscript under Peer Review</span><time>2026</time></div>
+              <p class="authors">Minhui Kang, <u>Yiyao Zhang</u>, Xinmeng Zeng, Hongyu Jin</p>
+              <p data-zh="在极端标注稀缺条件下研究蓝莓实例分割，围绕场景感知伪标签过滤与几何 Rescue 构建训练流程，并通过组件归因、子集与网络交叉复现、敏感性分析、GT 关联伪标签审计、外部目标评估及 K230 量化推理，对方法的可靠性与部署性进行技术验证。" data-en="Studies blueberry instance segmentation under extreme annotation scarcity through scene-aware pseudo-label filtering and geometric Rescue, with technical validation spanning component attribution, crossed subset/network replications, sensitivity analysis, GT-linked pseudo-label audits, external-target evaluation, and quantized K230 inference.">在极端标注稀缺条件下研究蓝莓实例分割，围绕场景感知伪标签过滤与几何 Rescue 构建训练流程，并通过组件归因、子集与网络交叉复现、敏感性分析、GT 关联伪标签审计、外部目标评估及 K230 量化推理，对方法的可靠性与部署性进行技术验证。</p>
+              <div class="paper-tags"><span>Semi-supervised Learning</span><span>Pseudo-labeling</span><span>Reliability Evaluation</span><span>Statistical Validation</span><span>Edge Deployment</span></div>
+              <div class="paper-links"><a href="https://zenodo.org/records/22026942" target="_blank" rel="noreferrer">Code & DOI ↗</a></div>
+            </div>
+          </article>
+
+          <article class="paper-item">
+            <div class="paper-body">
+              <div class="paper-title-row"><span class="paper-index">02</span><h3>Local Conflict-Aware Target Calibration for Reliable Dense Instance Learning in Crowded Agricultural Scenes</h3></div>
+              <div class="paper-status-row"><span class="status" data-zh="拥挤实例可靠性 · 研究工作" data-en="Crowded-instance Reliability · Research Work">拥挤实例可靠性 · 研究工作</span><time>2026</time></div>
+              <p data-zh="针对拥挤农业场景中的局部冲突、重复预测与计数膨胀，研究仅作用于训练阶段正样本分类目标的局部冲突感知校准，并通过空间先验打乱对照、消融与图像级 Bootstrap 检验分割精度和计数可靠性之间的权衡。" data-en="Studies local-conflict-aware calibration of positive classification targets for duplicate predictions and count inflation in crowded agricultural scenes, using shuffled spatial-prior controls, controlled ablations, and image-level bootstrap to evaluate the trade-off between segmentation accuracy and count reliability.">针对拥挤农业场景中的局部冲突、重复预测与计数膨胀，研究仅作用于训练阶段正样本分类目标的局部冲突感知校准，并通过空间先验打乱对照、消融与图像级 Bootstrap 检验分割精度和计数可靠性之间的权衡。</p>
+              <div class="paper-tags"><span>Dense Instance Segmentation</span><span>Reliable ML</span><span>Target Modulation</span><span>Statistical Validation</span><span>Crowded Scenes</span></div>
+            </div>
+          </article>
+
+          <article class="paper-item">
+            <div class="paper-body">
+              <div class="paper-title-row"><span class="paper-index">03</span><h3 data-zh="交叉拟合证据与冻结评分下的分割可靠性评估" data-en="Segmentation Reliability across Cross-Fitted Evidence and Frozen Scoring">交叉拟合证据与冻结评分下的分割可靠性评估</h3></div>
+              <div class="paper-status-row"><span class="status" data-zh="可靠机器学习 · 进行中" data-en="Reliable ML · Ongoing">可靠机器学习 · 进行中</span><time>2026</time></div>
+              <p data-zh="研究开发阶段的 OOF/交叉拟合可靠性增益能否在单一冻结、与折无关的评分规则上保持，覆盖语义分割不确定性、低熵失败探针、固定覆盖率下的选择性风险、成对/聚类 Bootstrap，以及可审计的证据契约。" data-en="Tests whether reliability gains found with out-of-fold/cross-fitted evidence survive under one frozen fold-agnostic scorer, covering semantic-segmentation uncertainty, low-entropy failure probes, selective risk at fixed coverage, paired/cluster bootstrap, and auditable evidence contracts.">研究开发阶段的 OOF/交叉拟合可靠性增益能否在单一冻结、与折无关的评分规则上保持，覆盖语义分割不确定性、低熵失败探针、固定覆盖率下的选择性风险、成对/聚类 Bootstrap，以及可审计的证据契约。</p>
+              <div class="paper-tags"><span>Semantic Segmentation</span><span>Selective Prediction</span><span>Cross-fitting</span><span>Uncertainty</span><span>Statistical Validation</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="compact-section" id="news">
         <div class="section-title">
           <h2 data-zh="近期动态" data-en="News">近期动态</h2>
@@ -84,53 +148,9 @@
         </div>
         <div class="news-list">
           <article><time>08 / 2026</time><p data-zh="发布蓝莓标签高效实例分割的代码与可复现材料，已由 Zenodo 分配 DOI。" data-en="Released code and reproducibility materials for label-efficient blueberry instance segmentation with a Zenodo DOI.">发布蓝莓标签高效实例分割的代码与可复现材料，已由 Zenodo 分配 DOI。</p><a href="https://zenodo.org/records/22026942" target="_blank" rel="noreferrer">Link ↗</a></article>
-          <article><time>08 / 2026</time><p data-zh="Scientific Reports 稿件完成 Major Revision，正在准备第二轮评审。" data-en="Completed the major revision of a Scientific Reports manuscript and prepared it for the second review round.">Scientific Reports 稿件完成 Major Revision，正在准备第二轮评审。</p></article>
+          <article><time>08 / 2026</time><p data-zh="Scientific Reports 稿件已完成大修并提交修订稿，目前正在第二轮同行评审中。" data-en="Completed and submitted the major revision of our Scientific Reports manuscript; the revised submission is currently under peer review.">Scientific Reports 稿件已完成大修并提交修订稿，目前正在第二轮同行评审中。</p></article>
           <article><time>2026</time><p data-zh="研究延伸至拥挤场景目标校准、计数可靠性，以及语义分割中的冻结评分与选择性决策。" data-en="Extended my research to target calibration and count reliability in crowded scenes, plus frozen scoring and selective decisions in semantic segmentation.">研究延伸至拥挤场景目标校准、计数可靠性，以及语义分割中的冻结评分与选择性决策。</p></article>
           <article><time>2026</time><p data-zh="获“中青杯”全国大学生数学建模竞赛全国一等奖及多项省级技能竞赛奖项。" data-en="Won a National First Prize in the Zhongqing Cup Mathematical Modeling Competition and multiple provincial skills awards.">获“中青杯”全国大学生数学建模竞赛全国一等奖及多项省级技能竞赛奖项。</p></article>
-        </div>
-      </section>
-
-      <section class="compact-section" id="research">
-        <div class="section-title">
-          <h2 data-zh="研究方向与工作" data-en="Research">研究方向与工作</h2>
-          <span>Selected Research</span>
-        </div>
-
-        <div class="direction-grid">
-          <article><b>01</b><h3 data-zh="标签高效视觉学习" data-en="Label-efficient Visual Learning">标签高效视觉学习</h3><p data-zh="在极少标注条件下利用教师-学生自训练、场景感知阈值与结构先验提升伪标签质量。" data-en="Teacher-student self-training, scene-aware thresholds, and structural priors for learning with extremely sparse labels.">在极少标注条件下利用教师-学生自训练、场景感知阈值与结构先验提升伪标签质量。</p></article>
-          <article><b>02</b><h3 data-zh="拥挤场景可靠感知" data-en="Reliable Perception in Crowds">拥挤场景可靠感知</h3><p data-zh="研究局部冲突、过分割与计数膨胀，通过训练期目标校准平衡分割精度与计数可靠性。" data-en="Local conflict, over-segmentation, and count inflation, balancing mask accuracy and count reliability via train-time target calibration.">研究局部冲突、过分割与计数膨胀，通过训练期目标校准平衡分割精度与计数可靠性。</p></article>
-          <article><b>03</b><h3 data-zh="可靠机器学习评估" data-en="Reliable ML Evaluation">可靠机器学习评估</h3><p data-zh="关注不确定性、选择性预测、交叉拟合与冻结评分之间的证据边界，以及可复现的统计验证。" data-en="Uncertainty, selective prediction, evidence boundaries between cross-fitted and frozen scoring, and reproducible statistical validation.">关注不确定性、选择性预测、交叉拟合与冻结评分之间的证据边界，以及可复现的统计验证。</p></article>
-          <article><b>04</b><h3 data-zh="边缘视觉系统" data-en="Edge Vision Systems">边缘视觉系统</h3><p data-zh="将轻量分割模型量化为 INT8，并在 CANMV-K230 等低功耗设备上完成端到端推理验证。" data-en="INT8 quantization of lightweight segmentation models and end-to-end validation on low-power hardware such as CANMV-K230.">将轻量分割模型量化为 INT8，并在 CANMV-K230 等低功耗设备上完成端到端推理验证。</p></article>
-        </div>
-
-        <div class="paper-list">
-          <article class="paper-item">
-            <div class="paper-meta"><span class="paper-index">01</span><span class="status accent">Scientific Reports · Major Revision</span><span>2026</span></div>
-            <div class="paper-body">
-              <h3>Technical Validation of Label-Efficient Blueberry Instance Segmentation under Extreme Annotation Scarcity</h3>
-              <p class="authors">Minhui Kang, <u>Yiyao Zhang</u>, Xinmeng Zeng, Hongyu Jin</p>
-              <p data-zh="在 Mega Blueberry 官方划分上研究 1% 标注条件下的实例分割。结合场景感知伪标签过滤、准球形几何救援、CBAM 与 WIoU，使静态自训练 Mask mAP50 从 0.732 提升至 0.801，困难子集从 0.536 提升至 0.788；2.6M 参数学生模型经 PTQ 后在 K230 达到 9.31 FPS。" data-en="Studies instance segmentation with only 1% labels on the official Mega Blueberry split. Scene-aware pseudo-label filtering, quasi-spherical geometric rescue, CBAM, and WIoU improve Mask mAP50 from 0.732 to 0.801 and the hard subset from 0.536 to 0.788; the 2.6M-parameter PTQ student reaches 9.31 FPS on K230.">在 Mega Blueberry 官方划分上研究 1% 标注条件下的实例分割。结合场景感知伪标签过滤、准球形几何救援、CBAM 与 WIoU，使静态自训练 Mask mAP50 从 0.732 提升至 0.801，困难子集从 0.536 提升至 0.788；2.6M 参数学生模型经 PTQ 后在 K230 达到 9.31 FPS。</p>
-              <div class="method-row"><span>YOLO11n-seg</span><span>Self-training</span><span>ACCP</span><span>Geometric Rescue</span><span>CBAM</span><span>WIoU</span><span>PTQ / INT8</span><a href="https://zenodo.org/records/22026942" target="_blank" rel="noreferrer">Code & DOI ↗</a></div>
-            </div>
-          </article>
-
-          <article class="paper-item">
-            <div class="paper-meta"><span class="paper-index">02</span><span class="status" data-zh="密集实例可靠性 · 研究工作" data-en="Dense-instance Reliability · Research Work">密集实例可靠性 · 研究工作</span><span>2026</span></div>
-            <div class="paper-body">
-              <h3>Local Conflict-Aware Target Calibration for Reliable Dense Instance Learning in Crowded Agricultural Scenes</h3>
-              <p data-zh="针对果园拥挤场景中的分裂式重复预测与计数膨胀，提出局部冲突感知目标校准（LCOC）：根据邻居数量、局部 IoU 和中心距离，仅软化正样本分类目标，不改变分配器、框/掩码损失、NMS 和推理流程。在 MinneApple 上 AP 从 0.3391 提升至 0.3440，MACD 从 29.59 降至 20.01，并通过打乱空间先验、消融和图像级 Bootstrap 验证。" data-en="Addresses split-like duplicates and count inflation in crowded orchard scenes with Local Conflict-Aware Target Calibration (LCOC). Neighbor count, local IoU, and center proximity soften only positive classification targets while assignment, box/mask loss, NMS, and inference remain fixed. On MinneApple, AP rises from 0.3391 to 0.3440 and MACD falls from 29.59 to 20.01, supported by shuffled-prior controls, ablations, and image-level bootstrap.">针对果园拥挤场景中的分裂式重复预测与计数膨胀，提出局部冲突感知目标校准（LCOC）：根据邻居数量、局部 IoU 和中心距离，仅软化正样本分类目标，不改变分配器、框/掩码损失、NMS 和推理流程。在 MinneApple 上 AP 从 0.3391 提升至 0.3440，MACD 从 29.59 降至 20.01，并通过打乱空间先验、消融和图像级 Bootstrap 验证。</p>
-              <div class="method-row"><span>RTMDet-Ins Tiny</span><span>MMDetection</span><span>Soft Targets</span><span>Spatial Priors</span><span>COCO AP</span><span>MACD</span><span>Bootstrap</span><span>MinneApple</span></div>
-            </div>
-          </article>
-
-          <article class="paper-item">
-            <div class="paper-meta"><span class="paper-index">03</span><span class="status" data-zh="可靠机器学习 · 进行中" data-en="Reliable ML · Ongoing">可靠机器学习 · 进行中</span><span>2026</span></div>
-            <div class="paper-body">
-              <h3 data-zh="交叉拟合证据与冻结评分下的分割可靠性评估" data-en="Segmentation Reliability across Cross-Fitted Evidence and Frozen Scoring">交叉拟合证据与冻结评分下的分割可靠性评估</h3>
-              <p data-zh="研究开发阶段的 OOF/交叉拟合可靠性增益，能否在单一冻结、与折无关的评分规则上保持。工作覆盖语义分割不确定性、低熵失败探针、90% 覆盖率下的选择性风险、成对/聚类 Bootstrap，以及将总体、拟合暴露、评分对象、冻结时点和评价终点绑定起来的证据契约。" data-en="Tests whether reliability gains found with out-of-fold/cross-fitted scores survive under one frozen fold-agnostic scorer. The work spans semantic-segmentation uncertainty, probes for low-entropy failures, selective risk at 90% coverage, paired/cluster bootstrap, and evidence contracts that bind population, fit exposure, scoring object, freeze timing, and endpoint.">研究开发阶段的 OOF/交叉拟合可靠性增益，能否在单一冻结、与折无关的评分规则上保持。工作覆盖语义分割不确定性、低熵失败探针、90% 覆盖率下的选择性风险、成对/聚类 Bootstrap，以及将总体、拟合暴露、评分对象、冻结时点和评价终点绑定起来的证据契约。</p>
-              <div class="method-row"><span>Semantic Segmentation</span><span>OOF / Cross-fitting</span><span>Selective Prediction</span><span>Calibration</span><span>Uncertainty</span><span>Paired Bootstrap</span><span>Evidence Contracts</span></div>
-            </div>
-          </article>
         </div>
       </section>
 
@@ -162,8 +182,8 @@
 
       <section class="compact-section" id="honors">
         <div class="section-title">
-          <h2 data-zh="荣誉与获奖" data-en="Honors & Awards">荣誉与获奖</h2>
-          <span>Honors</span>
+          <h2 data-zh="精选荣誉" data-en="Selected Honors">精选荣誉</h2>
+          <span>Selected Honors</span>
         </div>
         <div class="honor-grid">
           <article class="featured"><time>2026</time><div><h3 data-zh="“中青杯”全国大学生数学建模竞赛" data-en="Zhongqing Cup National Mathematical Modeling Competition">“中青杯”全国大学生数学建模竞赛</h3><p data-zh="全国一等奖" data-en="National First Prize">全国一等奖</p></div></article>
@@ -182,25 +202,20 @@
           <span>Technical Stack</span>
         </div>
         <div class="skill-table">
-          <div><h3 data-zh="视觉与深度学习" data-en="Vision & Deep Learning">视觉与深度学习</h3><p>PyTorch · MMDetection / MMEngine · Ultralytics · RTMDet-Ins · YOLO11n-seg · YOLOv8n-seg · OpenCV · COCO API</p></div>
-          <div><h3 data-zh="学习方法" data-en="Learning Methods">学习方法</h3><p data-zh="半监督学习 · 教师-学生自训练 · 伪标签过滤 · 软目标与目标校准 · CBAM · WIoU · 损失设计 · 结构先验" data-en="Semi-supervised learning · Teacher-student self-training · Pseudo-label filtering · Soft targets & calibration · CBAM · WIoU · Loss design · Structural priors">半监督学习 · 教师-学生自训练 · 伪标签过滤 · 软目标与目标校准 · CBAM · WIoU · 损失设计 · 结构先验</p></div>
-          <div><h3 data-zh="可靠性与评估" data-en="Reliability & Evaluation">可靠性与评估</h3><p data-zh="选择性预测 · 不确定性与校准 · OOF / 交叉拟合 · 成对与聚类 Bootstrap · 消融实验 · 打乱对照 · 难度切片 · AP / mAP / MACD" data-en="Selective prediction · Uncertainty & calibration · OOF / cross-fitting · Paired & cluster bootstrap · Ablations · Shuffled controls · Difficulty slices · AP / mAP / MACD">选择性预测 · 不确定性与校准 · OOF / 交叉拟合 · 成对与聚类 Bootstrap · 消融实验 · 打乱对照 · 难度切片 · AP / mAP / MACD</p></div>
-          <div><h3 data-zh="边缘与嵌入式" data-en="Edge & Embedded">边缘与嵌入式</h3><p>PTQ · INT8 · CANMV-K230 / KPU · STM32CubeIDE / HAL · C51 · PID · RS485 · PLC · TIA Portal · Proteus · Multisim · JLCEDA</p></div>
-          <div><h3 data-zh="编程与科研开发" data-en="Programming & Research">编程与科研开发</h3><p>Python · C / C++ · MATLAB · LaTeX · Linux / WSL · Git · NumPy / Pandas · Office / WPS · Data Processing & Visualization</p></div>
+          <div><h3 data-zh="视觉与学习" data-en="Vision & Learning">视觉与学习</h3><p>PyTorch · MMDetection · OpenCV · Instance/Semantic Segmentation · Semi-supervised Learning</p></div>
+          <div><h3 data-zh="可靠机器学习与评估" data-en="Reliable ML & Evaluation">可靠机器学习与评估</h3><p>Selective Prediction · Uncertainty · Calibration · Cross-fitting · Bootstrap · Controlled Ablation</p></div>
+          <div><h3 data-zh="边缘与嵌入式 AI" data-en="Edge & Embedded AI">边缘与嵌入式 AI</h3><p>INT8/PTQ · K230 · STM32 · Embedded Vision · RS485</p></div>
+          <div><h3 data-zh="编程与科研工程" data-en="Programming & Research Engineering">编程与科研工程</h3><p>Python · C/C++ · Linux/WSL · Git · LaTeX · NumPy/Pandas</p></div>
         </div>
       </section>
 
       <section class="compact-section interests-section" id="interests">
         <div class="section-title">
           <h2 data-zh="研究之外" data-en="Beyond Research">研究之外</h2>
-          <span>Interests & Gaming</span>
+          <span>Beyond</span>
         </div>
-        <div class="interest-layout">
-          <div class="interest-copy">
-            <span class="eyebrow" data-zh="个人兴趣" data-en="Personal Interests">个人兴趣</span>
-            <h3 data-zh="我也享受竞技、策略与持续复盘。" data-en="I also enjoy competition, strategy, and constant review.">我也享受竞技、策略与持续复盘。</h3>
-            <p data-zh="研究和工程之外，我长期体验不同类型的竞技游戏。无论是射击游戏中的即时判断、MOBA 的资源与团队协作，还是自走棋的阵容运营，我都喜欢观察局势、拆解决策并在复盘中优化细节。对我而言，游戏既是放松方式，也是保持专注、反应与策略思维的一种训练。" data-en="Outside research and engineering, I have spent years exploring different competitive games. I enjoy reading fast-changing situations, breaking decisions into smaller choices, coordinating with teammates, and improving through review—whether in tactical shooters, MOBAs, or auto battlers. Gaming is both how I unwind and how I keep my focus, reactions, and strategic thinking sharp.">研究和工程之外，我长期体验不同类型的竞技游戏。无论是射击游戏中的即时判断、MOBA 的资源与团队协作，还是自走棋的阵容运营，我都喜欢观察局势、拆解决策并在复盘中优化细节。对我而言，游戏既是放松方式，也是保持专注、反应与策略思维的一种训练。</p>
-          </div>
+        <div class="beyond-panel">
+          <p class="beyond-intro" data-zh="研究之外，我把竞技游戏作为放松方式，也享受其中的即时判断、团队协作和复盘。" data-en="Outside research, I play competitive games to unwind and enjoy the fast decisions, teamwork, and review they demand.">研究之外，我把竞技游戏作为放松方式，也享受其中的即时判断、团队协作和复盘。</p>
           <div class="game-list" aria-label="Competitive gaming experience">
             <article>
               <div><span class="game-index">01</span><h3>VALORANT</h3></div>
@@ -210,7 +225,7 @@
               <div><span class="game-index">02</span><h3 data-zh="王者荣耀" data-en="Honor of Kings">王者荣耀</h3></div>
               <p><strong data-zh="司马懿 · 国服榜" data-en="Sima Yi · National leaderboard">司马懿 · 国服榜</strong><span data-zh="最高战力 16,000+" data-en="Peak power 16,000+">最高战力 16,000+</span></p>
             </article>
-            <article class="game-featured">
+            <article>
               <div><span class="game-index">03</span><h3 data-zh="英雄联盟手游" data-en="League of Legends: Wild Rift">英雄联盟手游</h3></div>
               <p><strong data-zh="艾瑞莉娅 · 最高战力 23,144" data-en="Irelia · Peak champion score 23,144">艾瑞莉娅 · 最高战力 23,144</strong><span data-zh="Android QQ / 微信区 · 国一上榜 10+ 次" data-en="Android QQ / WeChat · National No. 1 leaderboard 10+ times">Android QQ / 微信区 · 国一上榜 10+ 次</span></p>
             </article>
@@ -227,7 +242,7 @@
       </section>
 
       <section class="contact-card" id="contact">
-        <div><span data-zh="科研合作 · 实习 · 项目交流" data-en="Research · Internship · Project Collaboration">科研合作 · 实习 · 项目交流</span><h2 data-zh="欢迎联系我讨论新的研究想法。" data-en="Let's discuss a new research idea.">欢迎联系我讨论新的研究想法。</h2></div>
+        <div><span data-zh="科研合作 · 实习 · 研究交流" data-en="Research · Internship · Collaboration">科研合作 · 实习 · 研究交流</span><h2 data-zh="欢迎联系我讨论科研合作、实习机会或新的研究问题。" data-en="Feel free to reach out about research collaboration, internships, or new research questions.">欢迎联系我讨论科研合作、实习机会或新的研究问题。</h2></div>
         <div><a class="email" href="mailto:13650921446@163.com">13650921446@163.com</a><p><a href="https://github.com/Legendzyy" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://zenodo.org/records/22026942" target="_blank" rel="noreferrer">Zenodo ↗</a></p></div>
       </section>
     </main>
