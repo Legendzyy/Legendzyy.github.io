@@ -1,24 +1,23 @@
 const root = document.documentElement;
 const languageButton = document.querySelector('.language-button');
-const currentLanguage = document.querySelector('.language-current');
-const otherLanguage = document.querySelector('.language-other');
+const languageCurrent = document.querySelector('.language-current');
+const languageOther = document.querySelector('.language-other');
 const menuButton = document.querySelector('.menu-button');
 const navLinks = document.querySelector('.nav-links');
-const siteHeader = document.querySelector('.site-header');
 
 function setLanguage(language) {
-  const normalized = language === 'en' ? 'en' : 'zh';
-  root.lang = normalized === 'zh' ? 'zh-CN' : 'en';
+  const value = language === 'en' ? 'en' : 'zh';
+  root.lang = value === 'zh' ? 'zh-CN' : 'en';
   document.querySelectorAll('[data-zh][data-en]').forEach((element) => {
-    element.textContent = element.dataset[normalized];
+    element.textContent = element.dataset[value];
   });
-  currentLanguage.textContent = normalized === 'zh' ? '中' : 'EN';
-  otherLanguage.textContent = normalized === 'zh' ? 'EN' : '中';
-  languageButton.setAttribute('aria-label', normalized === 'zh' ? 'Switch to English' : '切换到中文');
-  document.title = normalized === 'zh'
-    ? '张艺耀 | 计算机视觉与边缘 AI'
-    : 'Yiyao Zhang | Computer Vision & Embedded AI';
-  localStorage.setItem('preferred-language', normalized);
+  languageCurrent.textContent = value === 'zh' ? '中文' : 'EN';
+  languageOther.textContent = value === 'zh' ? 'EN' : '中文';
+  languageButton.setAttribute('aria-label', value === 'zh' ? 'Switch to English' : '切换到中文');
+  document.title = value === 'zh'
+    ? '张艺耀 | 计算机视觉与可靠 AI'
+    : 'Yiyao Zhang | Computer Vision & Reliable AI';
+  localStorage.setItem('preferred-language', value);
 }
 
 languageButton.addEventListener('click', () => {
@@ -26,8 +25,8 @@ languageButton.addEventListener('click', () => {
 });
 
 menuButton.addEventListener('click', () => {
-  const isOpen = navLinks.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(isOpen));
+  const open = navLinks.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(open));
 });
 
 navLinks.querySelectorAll('a').forEach((link) => {
@@ -37,33 +36,16 @@ navLinks.querySelectorAll('a').forEach((link) => {
   });
 });
 
-window.addEventListener('scroll', () => {
-  siteHeader.classList.toggle('scrolled', window.scrollY > 12);
-}, { passive: true });
-
-const revealObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-
-document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
-
 const sections = [...document.querySelectorAll('main section[id]')];
-const navigationItems = [...navLinks.querySelectorAll('a')];
-const sectionObserver = new IntersectionObserver((entries) => {
+const items = [...navLinks.querySelectorAll('a')];
+const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
-    navigationItems.forEach((item) => {
-      item.classList.toggle('active', item.getAttribute('href') === `#${entry.target.id}`);
-    });
+    items.forEach((item) => item.classList.toggle('active', item.hash === `#${entry.target.id}`));
   });
-}, { rootMargin: '-25% 0px -65% 0px' });
+}, { rootMargin: '-20% 0px -70% 0px' });
 
-sections.forEach((section) => sectionObserver.observe(section));
+sections.forEach((section) => observer.observe(section));
 
 const savedLanguage = localStorage.getItem('preferred-language');
 setLanguage(savedLanguage || (navigator.language.toLowerCase().startsWith('zh') ? 'zh' : 'en'));
