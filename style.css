@@ -91,7 +91,6 @@ button { font: inherit; }
 .education-content h3 { margin: 0 0 4px; color: var(--navy); font: 700 16px/1.3 var(--serif); }
 .education-content p { margin: 0; color: var(--muted); font-size: 11px; }
 .education-content .education-degree { margin-bottom: 5px; color: #40515d; font-weight: 650; }
-.education-content .education-focus { font-family: var(--serif); font-style: italic; }
 
 .research-agenda { margin: 0; padding: 13px 0 12px; color: #41596a; font: 600 13px/1.6 var(--serif); }
 
