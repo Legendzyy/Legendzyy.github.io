@@ -4,6 +4,9 @@ const languageCurrent = document.querySelector('.language-current');
 const languageOther = document.querySelector('.language-other');
 const menuButton = document.querySelector('.menu-button');
 const navLinks = document.querySelector('.nav-links');
+const newsToggle = document.querySelector('.news-toggle');
+const newsItems = [...document.querySelectorAll('.news-list > article')];
+const foldedNewsItems = newsItems.slice(4);
 
 function setLanguage(language) {
   const value = language === 'en' ? 'en' : 'zh';
@@ -35,6 +38,22 @@ navLinks.querySelectorAll('a').forEach((link) => {
     menuButton.setAttribute('aria-expanded', 'false');
   });
 });
+
+if (newsToggle && foldedNewsItems.length) {
+  const showLabel = newsToggle.querySelector('.news-show');
+  const hideLabel = newsToggle.querySelector('.news-hide');
+
+  foldedNewsItems.forEach((item) => { item.hidden = true; });
+  newsToggle.hidden = false;
+
+  newsToggle.addEventListener('click', () => {
+    const expanded = newsToggle.getAttribute('aria-expanded') === 'true';
+    newsToggle.setAttribute('aria-expanded', String(!expanded));
+    foldedNewsItems.forEach((item) => { item.hidden = expanded; });
+    showLabel.hidden = !expanded;
+    hideLabel.hidden = expanded;
+  });
+}
 
 const sections = [...document.querySelectorAll('main section[id]')];
 const items = [...navLinks.querySelectorAll('a')];
