@@ -7,6 +7,7 @@ const navLinks = document.querySelector('.nav-links');
 const newsToggle = document.querySelector('.news-toggle');
 const newsItems = [...document.querySelectorAll('.news-list > article')];
 const foldedNewsItems = newsItems.slice(4);
+const honorCarousel = document.querySelector('[data-honor-carousel]');
 
 function setLanguage(language) {
   const value = language === 'en' ? 'en' : 'zh';
@@ -53,6 +54,45 @@ if (newsToggle && foldedNewsItems.length) {
     showLabel.hidden = !expanded;
     hideLabel.hidden = expanded;
   });
+}
+
+if (honorCarousel) {
+  const honorTrack = honorCarousel.querySelector('.honor-track');
+  const honorCards = [...honorCarousel.querySelectorAll('.honor-card')];
+  const previousButton = honorCarousel.querySelector('.honor-prev');
+  const nextButton = honorCarousel.querySelector('.honor-next');
+  let honorIndex = 0;
+
+  const visibleHonors = () => {
+    if (window.matchMedia('(max-width: 560px)').matches) return 1;
+    if (window.matchMedia('(max-width: 780px)').matches) return 2;
+    return 3;
+  };
+
+  const updateHonorCarousel = () => {
+    const maxIndex = Math.max(0, honorCards.length - visibleHonors());
+    honorIndex = Math.min(honorIndex, maxIndex);
+    const cardWidth = honorCards[0]?.getBoundingClientRect().width || 0;
+    const gap = Number.parseFloat(getComputedStyle(honorTrack).gap) || 0;
+    honorTrack.style.transform = `translateX(-${honorIndex * (cardWidth + gap)}px)`;
+    previousButton.disabled = honorIndex === 0;
+    nextButton.disabled = honorIndex === maxIndex;
+  };
+
+  previousButton.addEventListener('click', () => {
+    honorIndex -= 1;
+    updateHonorCarousel();
+  });
+  nextButton.addEventListener('click', () => {
+    honorIndex += 1;
+    updateHonorCarousel();
+  });
+  honorCarousel.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft' && !previousButton.disabled) previousButton.click();
+    if (event.key === 'ArrowRight' && !nextButton.disabled) nextButton.click();
+  });
+  window.addEventListener('resize', updateHonorCarousel);
+  updateHonorCarousel();
 }
 
 const sections = [...document.querySelectorAll('main section[id]')];

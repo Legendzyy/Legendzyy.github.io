@@ -127,12 +127,19 @@ button { font: inherit; }
 .timeline p { margin: 0; color: var(--muted); font-size: 11px; }
 .timeline .subtitle { margin-bottom: 4px; color: #40515d; font-weight: 700; }
 
-.honor-grid { display: grid; grid-template-columns: 1fr 1fr; border-right: 1px solid var(--line); }
-.honor-grid article { display: grid; grid-template-columns: 55px 1fr; gap: 12px; min-height: 76px; padding: 13px 16px; border-bottom: 1px solid var(--line); border-left: 1px solid var(--line); }
-.honor-grid article.featured { background: var(--blue-soft); }
-.honor-grid time { color: var(--blue); font-size: 10px; font-weight: 800; }
-.honor-grid h3 { margin: 0 0 2px; color: var(--navy); font: 700 13px/1.35 var(--serif); }
-.honor-grid p { margin: 0; color: var(--muted); font-size: 10px; }
+.honor-carousel { display: grid; grid-template-columns: 30px minmax(0, 1fr) 30px; gap: 10px; align-items: center; margin-top: 15px; outline: none; }
+.honor-viewport { min-width: 0; overflow: hidden; }
+.honor-track { display: flex; gap: 12px; transition: transform .42s cubic-bezier(.22, .61, .36, 1); will-change: transform; }
+.honor-card { flex: 0 0 calc((100% - 24px) / 3); min-width: 0; overflow: hidden; background: white; border: 1px solid #d2dbe0; border-radius: 5px; box-shadow: 0 5px 15px rgba(27, 52, 68, .05); }
+.honor-card figure { display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 3; margin: 0; overflow: hidden; background: #f2f5f6; border-bottom: 1px solid var(--line); }
+.honor-card img { width: 100%; height: 100%; object-fit: contain; }
+.honor-card-body { min-height: 70px; padding: 10px 12px 12px; }
+.honor-card h3 { margin: 0 0 4px; color: var(--navy); font: 700 13px/1.35 var(--serif); }
+.honor-card p { margin: 0; color: var(--muted); font-size: 10px; }
+.honor-arrow { display: grid; place-items: center; width: 28px; height: 28px; padding: 0; color: var(--blue); background: white; border: 1px solid #b7c5cd; border-radius: 50%; cursor: pointer; transition: color .2s ease, background .2s ease, border-color .2s ease, opacity .2s ease; }
+.honor-arrow:hover:not(:disabled), .honor-arrow:focus-visible { color: white; background: var(--blue); border-color: var(--blue); }
+.honor-arrow:disabled { cursor: not-allowed; opacity: .28; }
+.honor-carousel-note { margin: 9px 0 0; color: #8b969e; font-size: 9px; text-align: center; }
 
 .skill-table { border-bottom: 1px solid var(--line); }
 .skill-table > div { display: grid; grid-template-columns: 176px 1fr; gap: 24px; padding: 12px 0; border-top: 1px solid var(--line); }
@@ -160,6 +167,7 @@ button { font: inherit; }
   .availability { display: none; }
   .research-themes { grid-template-columns: 1fr; gap: 10px; }
   .contact-card { gap: 24px; }
+  .honor-card { flex-basis: calc((100% - 12px) / 2); }
 }
 
 @media (max-width: 560px) {
@@ -193,7 +201,10 @@ button { font: inherit; }
   .paper-title-row { grid-template-columns: 24px minmax(0, 1fr); gap: 7px; }
   .paper-status-row, .paper-body > p, .paper-body .authors, .paper-tags, .paper-links { margin-left: 31px; }
   .paper-body h3 { font-size: 16px; }
-  .honor-grid { grid-template-columns: 1fr; }
+  .honor-carousel { grid-template-columns: 26px minmax(0, 1fr) 26px; gap: 7px; }
+  .honor-card { flex-basis: 100%; }
+  .honor-card-body { padding-inline: 10px; }
+  .honor-card h3 { font-size: 12px; }
   .contact-card { grid-template-columns: 1fr; gap: 18px; margin-top: 32px; padding: 24px 20px; }
   .contact-card h2 { font-size: 22px; }
   .contact-card .email { font-size: 16px; }
