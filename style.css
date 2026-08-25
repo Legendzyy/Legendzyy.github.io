@@ -59,6 +59,11 @@ button { font: inherit; }
 .profile-links a:hover { border-color: #9ac2de; background: #f8fbfd; }
 
 .beyond-panel { border-top: 1px solid var(--line); }
+.beyond-toggle { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 10px 0; color: var(--navy); cursor: pointer; list-style: none; font: 700 12px var(--serif); }
+.beyond-toggle::-webkit-details-marker { display: none; }
+.beyond-toggle::after { content: "+"; color: var(--blue); font: 700 17px/1 Arial, sans-serif; }
+.beyond-panel[open] .beyond-toggle { border-bottom: 1px solid var(--line); }
+.beyond-panel[open] .beyond-toggle::after { content: "−"; }
 .beyond-intro { margin: 0; padding: 10px 0; color: var(--muted); border-bottom: 1px solid var(--line); font-size: 10.5px; }
 .game-list { display: grid; grid-template-columns: 1fr 1fr; border-left: 1px solid var(--line); }
 .game-list article { display: grid; grid-template-columns: minmax(120px, .78fr) 1.22fr; gap: 14px; align-items: center; min-height: 58px; padding: 9px 12px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
