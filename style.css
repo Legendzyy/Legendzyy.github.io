@@ -131,6 +131,10 @@ button { font: inherit; }
 .timeline p { margin: 0; color: var(--muted); font-size: 11px; }
 .timeline .subtitle { margin-bottom: 4px; color: #40515d; font-weight: 700; }
 
+.honor-latest { display: grid; grid-template-columns: 75px minmax(0, 1fr); gap: 20px; align-items: center; padding: 12px 14px; margin-top: 15px; border: 1px solid var(--line); border-left: 3px solid var(--blue); background: #f7f9fb; }
+.honor-latest time { color: var(--blue); font-size: 10px; font-weight: 800; }
+.honor-latest h3 { margin: 0 0 3px; color: var(--navy); font: 700 13px/1.35 var(--serif); }
+.honor-latest p { margin: 0; color: var(--muted); font-size: 10px; }
 .honor-carousel { display: grid; grid-template-columns: 30px minmax(0, 1fr) 30px; gap: 10px; align-items: center; margin-top: 15px; outline: none; }
 .honor-viewport { min-width: 0; overflow: hidden; }
 .honor-track { display: flex; gap: 12px; transition: transform .42s cubic-bezier(.22, .61, .36, 1); will-change: transform; }
