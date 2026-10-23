@@ -86,7 +86,7 @@
 
           <div class="profile-stats" aria-label="Profile highlights">
             <span class="profile-stat"><span data-zh="研究工作" data-en="Research projects">研究工作</span><strong>4</strong></span>
-            <span class="profile-stat"><span data-zh="省级以上奖项" data-en="Provincial+ awards">省级以上奖项</span><strong>8</strong></span>
+            <span class="profile-stat"><span data-zh="省级以上奖项" data-en="Provincial+ awards">省级以上奖项</span><strong>9</strong></span>
           </div>
 
           <div class="profile-links">
@@ -106,6 +106,8 @@
         </div>
         <!-- Keep entries newest-first. The script automatically shows four and folds the rest. -->
         <div class="news-list" id="news-list">
+          <article><time datetime="2026-10-22">10 / 2026</time><p data-zh="🎉 获 2026 年度中国青年科技创新“揭榜挂帅”擂台赛人工智能领域全国二等奖。" data-en="🎉 Won a National Second Prize in the Artificial Intelligence field of the 2026 China Youth Science and Technology Innovation “Taking the Lead” Challenge.">🎉 获 2026 年度中国青年科技创新“揭榜挂帅”擂台赛人工智能领域全国二等奖。</p></article>
+          <article><time datetime="2026-10-21">10 / 2026</time><p data-zh="🔬 草莓实例分割研究 ProtoRefine 已投 Journal of King Saud University Computer and Information Sciences；截至 10 月 21 日，已通过技术审查并进入编辑评估。" data-en="🔬 Submitted ProtoRefine, our strawberry instance-segmentation study, to the Journal of King Saud University Computer and Information Sciences. As of October 21, it has passed technical checks and is with the editor for assessment.">🔬 草莓实例分割研究 ProtoRefine 已投 Journal of King Saud University Computer and Information Sciences；截至 10 月 21 日，已通过技术审查并进入编辑评估。</p></article>
           <article><time datetime="2026-10-12">10 / 2026</time><p data-zh="📄 语义分割组件选择研究的预印本已公开于 arXiv（2610.16058），可在线阅读。" data-en="📄 Our semantic-segmentation component-selection preprint is publicly available on arXiv (2610.16058).">📄 语义分割组件选择研究的预印本已公开于 arXiv（2610.16058），可在线阅读。</p></article>
           <article><time datetime="2026-10-11">10 / 2026</time><p data-zh="🔬 以共同第一作者身份向 Pattern Recognition 投稿语义分割组件选择研究；10 月 11 日投稿系统显示 With Editor。" data-en="🔬 Submitted our semantic-segmentation component-selection study to Pattern Recognition as a co-first author; the submission system showed With Editor on October 11.">🔬 以共同第一作者身份向 Pattern Recognition 投稿语义分割组件选择研究；10 月 11 日投稿系统显示 With Editor。</p></article>
           <article><time datetime="2026-10">10 / 2026</time><p data-zh="🎉 获中国国际大学生创新大赛省赛铜奖。" data-en="🎉 Won a Provincial Bronze Award in the China International College Students' Innovation Competition.">🎉 获中国国际大学生创新大赛省赛铜奖。</p></article>
@@ -189,9 +191,9 @@
 
           <article class="paper-item">
             <div class="paper-body">
-              <div class="paper-title-row"><span class="paper-index">04</span><h3 data-zh="草莓实例分割中的原型条件局部掩膜精修" data-en="Prototype-Conditioned Local Mask Refinement for Strawberry Instance Segmentation">草莓实例分割中的原型条件局部掩膜精修</h3></div>
-              <div class="paper-status-row"><span class="status accent" data-zh="拟投 Biosystems Engineering · 研究初稿" data-en="Biosystems Engineering (target) · Research Draft">拟投 Biosystems Engineering · 研究初稿</span><span class="status">JCR Q1 · IF 7.8 (2025)</span><time datetime="2026-09" data-zh="2026.09 起" data-en="Since Sep 2026">2026.09 起</time></div>
-              <p data-zh="面向叶片遮挡和小目标草莓的实例分割，研究如何复用检测器的空间原型、实例系数与粗掩膜，在保持检测结果不变的前提下精修局部轮廓；并探索按原生掩膜前景像素数进行约束解码，将像素位置调整与面积控制分开。" data-en="Studies strawberry instance segmentation under foliage occlusion and small-object conditions. It reuses detector prototypes, instance coefficients, and coarse masks for local contour refinement while keeping detections fixed, and explores native-area decoding to separate pixel placement from foreground-extent control.">面向叶片遮挡和小目标草莓的实例分割，研究如何复用检测器的空间原型、实例系数与粗掩膜，在保持检测结果不变的前提下精修局部轮廓；并探索按原生掩膜前景像素数进行约束解码，将像素位置调整与面积控制分开。</p>
+              <div class="paper-title-row"><span class="paper-index">04</span><h3 data-zh="ProtoRefine：结合原生面积解码的草莓实例掩膜原型条件精修" data-en="ProtoRefine: Prototype-conditioned refinement of strawberry instance masks with native-area decoding">ProtoRefine：结合原生面积解码的草莓实例掩膜原型条件精修</h3></div>
+              <div class="paper-status-row"><span class="status accent" data-zh="Journal of King Saud University Computer and Information Sciences · 已投稿" data-en="Journal of King Saud University Computer and Information Sciences · Submitted">Journal of King Saud University Computer and Information Sciences · 已投稿</span><span class="status" data-zh="编辑评估中（截至 10/21）" data-en="With Editor (as of Oct 21)">编辑评估中（截至 10/21）</span><span class="status">JCR Q1 · IF 6.4 (2025)</span><time datetime="2026-09" data-zh="2026.09 起" data-en="Since Sep 2026">2026.09 起</time></div>
+              <p data-zh="面向叶片遮挡与小目标草莓的轮廓分割，提出复用原型分割器现有表示的局部掩膜精修方法。共享预测器结合空间原型、实例系数、粗掩膜 logits 与局部坐标调整像素布局，再以原生掩膜前景像素数约束解码，同时保持检测框、类别与置信度不变。" data-en="Introduces local mask refinement for strawberry contours under foliage occlusion and small-object conditions by reusing a prototype-based segmenter's existing representations. A shared predictor combines spatial prototypes, instance coefficients, coarse mask logits, and local coordinates; native-area decoding reallocates foreground pixels while preserving their count, with boxes, classes, and confidence scores unchanged.">面向叶片遮挡与小目标草莓的轮廓分割，提出复用原型分割器现有表示的局部掩膜精修方法。共享预测器结合空间原型、实例系数、粗掩膜 logits 与局部坐标调整像素布局，再以原生掩膜前景像素数约束解码，同时保持检测框、类别与置信度不变。</p>
               <div class="paper-tags"><span data-zh="草莓实例分割" data-en="Strawberry Instance Segmentation">草莓实例分割</span><span data-zh="原型条件精修" data-en="Prototype-Conditioned Refinement">原型条件精修</span><span data-zh="原生面积解码" data-en="Native-Area Decoding">原生面积解码</span><span data-zh="局部掩膜" data-en="Local Masks">局部掩膜</span></div>
             </div>
           </article>
